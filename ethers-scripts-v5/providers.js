@@ -43,6 +43,7 @@ console.log(
   ethers.utils.formatEther(account_2_Balence),
   "ether."
 ); // ether
+
 if (account_1_Balance.gt(account_2_Balence)) {
   console.log("Account_1 has more ETH than Account_2");
 } else {
