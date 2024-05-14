@@ -2,7 +2,7 @@
 // console.log(process.env);
 
 import "dotenv/config";
-import { BigNumber, ethers, utils } from "ethers";
+import { ethers } from "ethers";
 
 const infuraUrl = `https://sepolia.infura.io/v3/${process.env.INFURA_KEY}`;
 const provider = new ethers.providers.JsonRpcProvider(infuraUrl);
