@@ -1,5 +1,7 @@
 ```shell
-yarn init
+npm init
 
-yarn add ethers@5
+npm i ethers
+
+npm i dotenv
 ```
