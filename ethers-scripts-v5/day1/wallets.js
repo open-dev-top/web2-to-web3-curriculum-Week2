@@ -66,6 +66,6 @@ const tx = await signer.sendTransaction({
   to: "0xFd3759c71636EEB14C43ab0622EFd4E2E8192BBa",
   value: myBalance.div(BigNumber.from(10)),
 });
-console.log("TX is minting...", tx);
+console.log("TX is mining...", tx);
 await tx.wait();
 console.log("TX CONFIRMED!");
