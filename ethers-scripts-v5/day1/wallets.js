@@ -44,7 +44,7 @@ private key: 0x5e44eed0d1719588b73cc23cee563a9c636703f4749aedcce2785e766313b62c
 //   console.log("private key:", myWallet.privateKey);
 // }
 
-const infuraUrl = `https://sepolia.infura.io/v3/${process.env.INFURA_KEY}`;
+const infuraUrl = `https://sepolia.infura.io/v3/${process.env.INFURA_API_KEY}`;
 const provider = new ethers.providers.JsonRpcProvider(infuraUrl);
 
 const signer = new ethers.Wallet(process.env.MY_WALLET_PRIVATE_KEY, provider);
