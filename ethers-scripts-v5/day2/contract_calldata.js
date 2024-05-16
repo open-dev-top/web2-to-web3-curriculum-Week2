@@ -21,6 +21,8 @@ const simpleNFTContract = new ethers.Contract(
   sepoliaSigner
 );
 
+const mintCalldata = "0x110bcd45";
+
 /* Once Run Result:
 0x23dEf6F5935d0925925F07e76902608a45bA1Aed is Minting NFT!
 TX sent... 0xfe2527ea852af3b4433a89ce003927548542b86a822832bace23adba4eb8e8d1
@@ -30,6 +32,9 @@ console.log(sepoliaSigner.address, "is Minting NFT!");
 const mintTx = await simpleNFTContract.mintItem(
   sepoliaSigner.address,
   "QmfVMAmNM1kDEBYrC2TPzQDoCRFH6F5tE1e9Mr4FkkR5Xr"
+  // data: mintCalldata // If this is a transaction.
+  // nonce: 4,
+  // gasPrice: 300000,
 );
 
 console.log("TX sent...", mintTx.hash);
