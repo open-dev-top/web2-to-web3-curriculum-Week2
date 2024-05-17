@@ -1,7 +1,13 @@
-```shell
-# Fatal: Failed to register the Ethereum service: can't run eth.Ethereum in light sync mode, light mode has been deprecated
-geth --syncmode light --http --http.addr localhost
+# Sample Hardhat Project
 
-# Blockchain sync mode ("snap" or "full")
-geth --sepolia --syncmode snap --http --http.addr localhost
+This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+
+Try running some of the following tasks:
+
+```shell
+npx hardhat help
+npx hardhat test
+REPORT_GAS=true npx hardhat test
+npx hardhat node
+npx hardhat ignition deploy ./ignition/modules/Lock.js
 ```
